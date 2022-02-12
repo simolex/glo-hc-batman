@@ -23,13 +23,16 @@ boby {
 }
 
 body {
-  background: url("../img/background.jpg") top left / 140% no-repeat;
+  background: url("../img/background.jpg");
+  background-repeat: no-repeat;
+  background-size: 145%;
+  background-position: top left;
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 400;
 }
 .header {
-  padding: 0 0 9.5rem;
+  padding-bottom: 9.5rem;
   position: absolute;
   width: 100%;
   left: 50%;
@@ -171,18 +174,23 @@ body {
 .rating {
   display: flex;
   align-items: center;
-  cursor: pointer;
 }
 .rating__stars {
   display: flex;
   align-items: center;
+  cursor: pointer;
 }
 .rating__star {
   width: 1.6rem;
   height: 1.6rem;
   flex-shrink: 0;
+  stroke: #151515;
+  fill: transparent;
+}
+.rating__star--active {
   fill: #151515;
 }
+
 .rating__star:not(:last-child) {
   margin-right: 0.4rem;
 }
