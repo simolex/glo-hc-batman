@@ -29,8 +29,14 @@ body {
   font-weight: 400;
 }
 .header {
-  padding: 6.4rem 0 9.5rem;
+  padding: 0 0 9.5rem;
+  position: absolute;
+  width: 100%;
+  left: 50%;
+  top: 6.4rem;
+  transform: translate(-50%, 0);
 }
+
 .header .container {
   display: flex;
   align-items: center;
@@ -117,6 +123,7 @@ body {
 
 .main {
   color: #ffffff;
+  padding-top: 18.7rem;
 }
 .main__tags {
   font-size: 1.4rem;
