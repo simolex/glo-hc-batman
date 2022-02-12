@@ -23,7 +23,7 @@ boby {
 }
 
 body {
-  background: url("../img/background.jpg");
+  background: url("../img/background.jpg") top left / 140% no-repeat;
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -137,21 +137,25 @@ body {
 .main__description {
   font-size: 1.4rem;
   line-height: 150%;
+  max-width: 52.8rem;
   margin-bottom: 4rem;
 }
 
 .main__button {
+  margin-bottom: 8.8rem;
 }
 .button {
-  color: #ffffff;
   cursor: pointer;
   border: none;
-  background: #151515;
-  border-radius: 8px;
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding: 22px 72px;
+  justify-content: center;
+  color: #ffffff;
+  background-color: #151515;
+  min-width: 24.5rem;
+  padding: 22px 22px;
+  border-radius: 8px;
   font-weight: 700;
   font-size: 1.4rem;
   line-height: 114%;
@@ -160,6 +164,7 @@ body {
 .rating {
   display: flex;
   align-items: center;
+  cursor: pointer;
 }
 .rating__stars {
   display: flex;
@@ -168,8 +173,13 @@ body {
 .rating__star {
   width: 1.6rem;
   height: 1.6rem;
+  flex-shrink: 0;
   fill: #151515;
 }
+.rating__star:not(:last-child) {
+  margin-right: 0.4rem;
+}
+
 .rating__text {
   margin-left: 0.9rem;
   font-size: 1.2rem;
