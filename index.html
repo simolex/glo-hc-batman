@@ -16,12 +16,13 @@
     <link rel="stylesheet" href="css/style.css" />
     <script defer src="js/swiper-bundle.min.js"></script>
     <script defer src="js/slider.js"></script>
+    <script defer src="js/menu_mobile.js"></script>
     <script defer src="js/stars.js"></script>
   </head>
-  <body>
+  <body class="body">
     <header class="header">
       <div class="container">
-        <div class="header__nav">
+        <div class="header__nav header__nav--active">
           <div class="header__logo-wrap">
             <img class="header__logo" src="img/logo.png" alt="Logo: The Batman" />
           </div>
@@ -43,6 +44,19 @@
               </a>
             </div>
           </div>
+          <div class="header__menu-close">
+            <img src="img/close.svg" alt="Icon: Close" />
+          </div>
+        </div>
+        <div class="header__menu-burger">
+          <svg>
+            <title>Icon: Menu</title>
+            <g>
+              <path d="M28,10H4A1,1,0,0,1,4,8H28a1,1,0,0,1,0,2Z" />
+              <path d="M28,17H4a1,1,0,0,1,0-2H28a1,1,0,0,1,0,2Z" />
+              <path d="M28,24H4a1,1,0,0,1,0-2H28a1,1,0,0,1,0,2Z" />
+            </g>
+          </svg>
         </div>
       </div>
     </header>

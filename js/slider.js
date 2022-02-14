@@ -10,6 +10,16 @@ const slider = () => {
     navigation: {
       nextEl: ".main__button-next",
     },
+    breakpoints: {
+      320: {
+        slidesPerView: 1,
+        spaceBetween: 0,
+      },
+      768: {
+        slidesPerView: 2,
+        spaceBetween: 28,
+      },
+    },
   });
 };
 slider();
